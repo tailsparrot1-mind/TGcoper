@@ -62,8 +62,10 @@ button{font-family:inherit}
 .hero h1,.page-heading h1{font-size:30px;line-height:1.2;letter-spacing:-1.1px;margin:21px 0 12px;font-weight:800}
 .hero h1 span,.page-heading h1 span{color:#9bbce5}
 .hero p,.page-heading p{font-size:14px;line-height:1.8;color:#aab8ca;max-width:390px;margin:0 0 22px}
-.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;position:relative;z-index:2}
-.button{border-radius:10px;padding:13px 16px;font-size:11px;font-weight:700;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.hero-actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;z-index:2}
+.button{border-radius:12px;padding:17px 20px;font-size:14px;font-weight:800;min-height:56px;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.hero-actions .button{width:min(100%,360px);letter-spacing:.1px}
+.button.full{width:100%;min-height:54px;font-size:14px}
 .button:active{transform:translateY(1px)}
 .button.primary{
   border:1px solid rgba(147,188,233,.48);
@@ -114,7 +116,7 @@ button{font-family:inherit}
 .nav-item span{font-size:18px}
 .nav-item.selected{color:#a8c9ed}
 .nav-item.selected span{filter:drop-shadow(0 0 7px rgba(126,177,229,.35))}
-@media(min-width:500px){.app-shell{padding-left:23px;padding-right:23px}.hero{padding:33px 27px}.hero h1{font-size:34px}}
+@media(min-width:500px){.app-shell{padding-left:23px;padding-right:23px}.hero{padding:33px 27px}.hero h1{font-size:34px}.hero-actions{flex-direction:row;flex-wrap:wrap}.hero-actions .button{width:auto;min-width:190px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 
 /* TG_Coper signature lighting and glass depth */
