@@ -23,7 +23,7 @@ body{
   background-color:#080d1b;
   background-image:
     linear-gradient(180deg,rgba(5,9,20,.62) 0%,rgba(7,11,24,.46) 38%,rgba(5,10,21,.72) 100%),
-    url("./assets/tgcoper-wallpaper.svg");
+    url("https://raw.githubusercontent.com/alexmashin76-debug/TG-Coper-DarkGlass/main/ui_background.png");
   background-size:cover;
   background-position:center top;
   background-attachment:fixed;
@@ -59,7 +59,7 @@ button{font-family:inherit}
   border:1px solid rgba(139,181,244,.36);border-radius:22px;padding:27px 22px 25px;min-height:344px;
   background:
     linear-gradient(115deg,rgba(12,22,43,.82),rgba(15,25,52,.62) 55%,rgba(34,24,66,.68)),
-    url("./assets/tgcoper-wallpaper.svg") center 30%/cover;
+    url("https://raw.githubusercontent.com/alexmashin76-debug/TG-Coper-DarkGlass/main/ui_background.png") center 30%/cover;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.11),0 20px 55px rgba(0,0,0,.38),0 0 34px rgba(78,123,218,.10);
 }
 .hero:before{content:"";position:absolute;z-index:-1;width:260px;height:260px;right:-115px;top:-120px;border-radius:50%;border:1px solid rgba(127,170,220,.2);box-shadow:0 0 0 24px rgba(127,170,220,.025),0 0 0 50px rgba(127,170,220,.02)}
