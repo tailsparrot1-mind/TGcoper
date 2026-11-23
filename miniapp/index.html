@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101020">
+  <title>TG_Coper — автоматизация Telegram-каналов</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-page="home" aria-label="TG Coper">
+        <span class="brand-mark">TG</span>
+        <span><b>TG_Coper</b><small>CHANNEL AUTOMATION</small></span>
+      </a>
+      <button class="icon-button" id="profileShortcut" aria-label="Профиль">⌘</button>
+    </header>
+
+    <main>
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="eyebrow"><span class="pulse"></span> АВТОМАТИЗАЦИЯ TELEGRAM</div>
+          <h1>Меньше рутины.<br><span>Больше автоматизации.</span></h1>
+          <p>TG_Coper помогает автоматизировать наполнение Telegram-каналов: от копирования публикаций до фильтрации контента.</p>
+          <div class="hero-actions">
+            <button class="button primary" data-page="download">↓ Скачать программу</button>
+            <button class="button secondary" data-page="licenses">Купить лицензию <span>↗</span></button>
+          </div>
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-core">TG<span>_</span></div>
+        </div>
+
+        <div class="section-heading"><div><span class="eyebrow">ВОЗМОЖНОСТИ</span><h2>Работа канала — проще</h2></div></div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-icon">↻</span><b>Автокопирование</b><p>Перенос публикаций из выбранных источников.</p></article>
+          <article class="feature-card"><span class="feature-icon">⌕</span><b>Фильтрация</b><p>Отбор контента по заданным правилам.</p></article>
+          <article class="feature-card"><span class="feature-icon">▤</span><b>Источники</b><p>Управление каналами-источниками.</p></article>
+          <article class="feature-card"><span class="feature-icon">✎</span><b>Оформление</b><p>Теги и подпись для публикаций.</p></article>
+        </div>
+        <div class="callout"><div><b>Готовы попробовать?</b><p>Скачайте программу или посмотрите варианты лицензии.</p></div><button class="round-arrow" data-page="download">→</button></div>
+      </section>
+
+      <section class="page" id="page-download">
+        <button class="back-link" data-page="home">← На главную</button>
+        <div class="page-heading"><span class="eyebrow">УСТАНОВКА</span><h1>Скачать <span>TG_Coper</span></h1><p>Получите установочный файл и инструкцию по запуску.</p></div>
+        <div class="download-card">
+          <div class="file-icon">↓</div><div class="file-info"><b>Установщик TG_Coper</b><small>Актуальная версия · ссылка будет добавлена</small></div>
+          <span class="status-pill">СКОРО</span>
+        </div>
+        <div class="notice">Ссылка на проверенный установочный архив пока не подключена. Мы добавим её после публикации актуальной сборки.</div>
+        <button class="button secondary full" data-page="licenses">Уже скачали? Купить лицензию →</button>
+      </section>
+
+      <section class="page" id="page-licenses">
+        <button class="back-link" data-page="home">← На главную</button>
+        <div class="page-heading"><span class="eyebrow">ЛИЦЕНЗИРОВАНИЕ</span><h1>Выберите <span>лицензию</span></h1><p>Выберите подходящий вариант использования TG_Coper.</p></div>
+        <article class="license-card">
+          <div class="license-top"><span class="eyebrow">TG_COPER</span><span class="status-pill">УСЛОВИЯ УТОЧНЯЮТСЯ</span></div>
+          <h2>Лицензия TG_Coper</h2>
+          <p>Доступ к функциям программы после активации лицензионного ключа.</p>
+          <ul><li>Активация программы</li><li>Проверка статуса лицензии</li><li>Помощь с установкой</li></ul>
+          <button class="button primary full" id="requestLicense">Запросить условия покупки</button>
+          <small class="muted">Онлайн-оплата будет подключена после настройки приёма платежей.</small>
+        </article>
+      </section>
+
+      <section class="page" id="page-profile">
+        <button class="back-link" data-page="home">← На главную</button>
+        <div class="page-heading"><span class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</span><h1>Ваш <span>профиль</span></h1><p>Информация Telegram будет доступна после запуска через бота.</p></div>
+        <div class="profile-card"><div class="avatar" id="avatar">TG</div><div><b id="profileName">Пользователь Telegram</b><small id="profileId">Откройте приложение через Telegram-бота</small></div></div>
+        <div class="notice">Здесь появятся ваши заказы, лицензии и статус активации.</div>
+      </section>
+
+      <section class="page" id="page-support">
+        <button class="back-link" data-page="home">← На главную</button>
+        <div class="page-heading"><span class="eyebrow">ПОМОЩЬ</span><h1>Поддержка <span>TG_Coper</span></h1><p>Нужна помощь с программой, установкой или лицензией?</p></div>
+        <div class="support-card"><span class="feature-icon">✉</span><b>Связаться с поддержкой</b><p>Контакт поддержки будет добавлен перед запуском.</p><span class="status-pill">СКОРО</span></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Навигация">
+      <button class="nav-item selected" data-page="home"><span>⌂</span>Главная</button>
+      <button class="nav-item" data-page="download"><span>↓</span>Скачать</button>
+      <button class="nav-item" data-page="licenses"><span>◇</span>Лицензия</button>
+      <button class="nav-item" data-page="support"><span>♡</span>Помощь</button>
+    </nav>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
